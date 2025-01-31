@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>DoubleScents©</title>
+    <h1 style="font-size: 35px; color: white; text-align: center; text-decoration:double; margin-top: 50px;">DoubleScents©</h1>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px;
+            padding: 0px;
+            background-color: gray;
+            color: whitesmoke;
+            background-image: url(graywallpaper.jpg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: whitesmoke;
+        }
+        /* Header Styles */
+        header {
+            background-color: gray;
+            color: whitesmoke;
+            padding: 9px;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 5px;
+            font-size: 3em;
+        }
+        header img{
+            display: block;
+            margin: 0 auto;
+            width: 130px;
+            height: auto;
+        }
+        #gallery {
+          text-align: center;
+          padding: 49px;
+
+        }
+        .gallery-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 19px;
+          padding: 19px;
+          margin: 0 auto;
+        }
+        .gallery-item {
+          position: relative;
+          width: 140px;
+          height: 140px;
+          border-radius: 30%;
+          overflow: hidden;
+          cursor: pointer;
+
+        }
+        .gallery-item img{
+          width: 100%;
+          height: 100%;
+          border-radius: 21%;
+          transition: transform 0.2 ease-in-out, filter 0.2s ease-in-out;
+          object-fit: cover;
+        }
+        .gallery-item:hover img {
+          transform: scale(1.1);
+          filter: brightness(49%);
+        }
+
+        .gallery-item p {
+          padding: 5px 11px;
+          opacity: 0;
+          border-radius: 4px;
+          transition: opacity 0.2 ease-in-out;
+          background-color: rgba(0, 0, 0, 0.5);
+          transform: translateX(-51%);
+          left: 51%;
+          bottom: 11px;
+          position: absolute;
+          font-size: 1em;
+          color: white;
+          text-align: center;
+          width: 79%;
+        }
+
+        .gallery-item:hover p {
+          opacity: 1;
+          transform: translateX(-50%) translateY(-11px);
+        }
+
+        .gallery-item:hover img {
+          transform: scale (1.1);
+          filter: brightness(50%);
+        }
+       
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding: 12px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav a {
+            color: antiquewhite;
+            text-decoration: dashed;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: all 0.2s ease-in;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #848372; 
+            background-color: antiquewhite;
+            border-radius: 3px;
+            padding: 3px 5px;
+            font-size: 1em;
+            font-weight: bold;
+            text-shadow: 1px 1 px 2px;
+            transform: scale(1.1);
+        }
+        nav a:hover::after {
+            content: '';
+            position: fixed;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: antiquewhite;
+            transition: width 0.3s ease-in;
+        }
+        .social-links a {
+        margin: 0 10px;
+        text-decoration:solid;
+        color: antiquewhite;
+        }
+        .social-links a:hover {
+            color: antiquewhite;
+        }
+        .social-links img{
+            vertical-align: middle;
+            margin-left: 5px;
+            width: 30px;
+            height: 30px;
+        }
+        .social-links a{
+            margin: 0 11px;
+            color:antiquewhite;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .social-links a:hover {
+            color:aliceblue
+        }
+        .social-links img {
+            vertical-align: middle;
+            margin-left: 4px;
+            width: 29px;
+            height: 29px;
+        }
+        /* Footer Styles */
+              Footer {
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 19px;
+            margin-top: 19px;
+        }
+        </style>
+        </html>
+
+        <section id="gallery">
+          <h2>Home Fragrances</h2>
+          <p>These fragrances products include scented candles and diffusers, popular for customers!
+            <br>When it comes to improving your home, one of the few things are effective as a scented candle.</br>
+          </p>
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <img src="diffuser1.jpg">
+              <p>On A Date</p>
+            </div>
+          
+            <div class="gallery-item">
+              <img src="diffuser2.jpg">
+              <p>Beach Vibes</p>
+            </div>
+          
+            <div class="gallery-item">
+              <img src="diffuser3.jpg">
+              <p>Lazy Sunday Morning</p>
+            </div>
+          
+            <div class="gallery-item">
+              <img src="diffuser4.jpg">
+              <p>When The Rain Stops</p>
+            </div>
+
+            <div class="gallery-item">
+              <img src="diffuser5.jpg">
+              <p>Muse Vanille</p>
+            </div>
+        </div>
+
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="ourstory.html">Our Story</a>
+          <a href="homefragrances.html">Home Fragrances</a>
+          <a href="perfume.html">Perfumes</a>
+          <a href="bodycares.html">Body Cares</a>
+          <a href="location.html">Location</a>
+          <a href="mens.html">Men's Fragrances</a>
+          <a href="womens.html">Women's Fragrances</a>
+          <a href="contact us.html">Contact Us</a>
+      </nav>
+
+    </style>
+    <footer>
+      <p>Connect with our Social Media!</p>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+          <img src="facebook.jpg" alt="facebook" width="30">
+      </a>
+        <a href="https://x.com" target="_blank">Twitter</a>
+          <img src="x.jpg" alt="X" width="30">
+      </a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+          <img src="ig.jpg" alt="Instagram" width="30">
+      </a>
+      </div>
+      <p>&copy;DoubleScents©</p>
+    </footer>
+    
+       
+  </body>
+  </html>
+  
+  
